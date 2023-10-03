@@ -1,0 +1,7 @@
+secrets.py
+app_secrets.py
+*secrets.py
+__pycache__/
+*.pyc
+*.log
+debug.log

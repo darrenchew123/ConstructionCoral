@@ -1,0 +1,42 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      }
+    },
+    {
+      "name": "inference",
+      "type": {
+        "type": "record",
+        "name": "Inference",
+        "fields": [
+          {
+            "name": "id",
+            "type": "int"
+          },
+          {
+            "name": "score",
+            "type": "float"
+          },
+          {
+            "name": "bbox",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latitude",
+      "type": "float"
+    },
+    {
+      "name": "longitude",
+      "type": "float"
+    }
+  ]
+}
